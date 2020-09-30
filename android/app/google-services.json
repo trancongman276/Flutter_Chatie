@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "41230125766",
+    "firebase_url": "https://chatie-8e767.firebaseio.com",
+    "project_id": "chatie-8e767",
+    "storage_bucket": "chatie-8e767.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41230125766:android:22abce6643c0ba8842e5c7",
+        "android_client_info": {
+          "package_name": "com.doku.chatie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41230125766-kt6rn4rcm0c1hr6ae74qt49ub6a8b958.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeZcLB09Y7sBiFDZl4fhDr8JhNAwQ6IZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41230125766-kt6rn4rcm0c1hr6ae74qt49ub6a8b958.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

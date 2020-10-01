@@ -1,9 +1,9 @@
 import 'package:chatie/Home/homeView.dart';
+import 'package:chatie/Login/registerView.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'file:///D:/CodeSheeeeet/AndroidProject/chatie/lib/Login/registerView.dart';
 
 class loginView extends StatefulWidget {
   @override
@@ -41,6 +41,7 @@ class _loginViewState extends State<loginView> {
       if (value.length < 6) {
         return 'Wrong password format';
       }
+      return '';
     }
 
     Widget textField(bool isPassword) {
@@ -65,7 +66,7 @@ class _loginViewState extends State<loginView> {
         final UserCredential user = await _auth.signInWithEmailAndPassword(
             email: _emailControler.text, password: _passwordControler.text);
         print('Login $user.uid');
-        Navigator.push(context,MaterialPageRoute(builder: (context) => homeView()));
+        Navigator.push(context,MaterialPageRoute(builder: (context) => homeView(uid : user.user.uid)));
       } catch (e) {
         print('Error $e.code');
         setState(() {
